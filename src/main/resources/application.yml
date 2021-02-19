@@ -1,0 +1,15 @@
+server: 8080
+
+#acturator 健康管理-优雅停机配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: shutdown
+  endpoint:
+    shutdown:
+      enabled: true
+  server:
+    port: 8080
+
+
