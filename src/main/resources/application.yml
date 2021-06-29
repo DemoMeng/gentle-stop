@@ -5,10 +5,16 @@ management:
   endpoints:
     web:
       exposure:
-        include: shutdown
+        include: shutdown,env,mappings,info,metrics # web开放endpoint的下面的功能 （ beans，configprops，env，health，info，metrics，mappings，shutdown）
+  # endpoint 下面的功能有 beans，configprops，env，health，info，metrics，mappings，shutdown ，详看README.md
   endpoint:
     shutdown:
       enabled: true
+    env:
+      enabled: true
+
+
+
   server:
     port: 8080
 

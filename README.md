@@ -52,4 +52,38 @@
 
 
 
+
+# Spring Boot Actuator 中的 endpoint
+
+    * endpoint 是我们使用 Spring Boot Actuator 最需要关心的对象，列举一些你可能感兴趣的 endpoint
+
+        beans	    查看 Spring 容器中的所有对象
+        configprops	查看被 @ConfigurationProperties 修饰的对象列表
+        env	        查看 application.yaml 配置的环境配置信息
+        health	    健康检查端点
+        info	    应用信息
+        metrics	    统计信息
+        mappings	服务契约 @RequestMapping 相关的端点
+        shutdown	优雅下线
+
+  
+    * 配置web暴露：
+![img.png](images/配置endpoint功能web暴露接口.png)
+
+
+    * 访问： localhost:8080/actuator/info  #其中info是endpoint下的功能key
+
+
+    
+        
+    
+  
+
+
+
+
+
+
+
+
     
